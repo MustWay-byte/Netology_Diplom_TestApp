@@ -4,11 +4,11 @@ on:
   push:
     branches:
       - main
-    paths:
-      - 'app/**'
-  push:
     tags:
       - 'v*'
+    paths:
+      - 'app/**'
+      - '.github/workflows/**'
 
 env:
   REGISTRY: cr.yandex
